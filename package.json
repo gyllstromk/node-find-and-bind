@@ -1,0 +1,28 @@
+{
+  "name": "node-find-and-bind",
+  "version": "0.0.0",
+  "description": "Find and bind to free port in restify/express/connect.",
+  "main": "index.js",
+  "dependencies": {
+    "async": "~0.2.9"
+  },
+  "devDependencies": {
+    "mocha": "~1.12.0"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test.js -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gyllstromk/node-find-and-bind.git"
+  },
+  "keywords": [
+    "restify",
+    "express",
+    "connect",
+    "port"
+  ],
+  "author": "Karl Gyllstrom",
+  "license": "BSD",
+  "gitHead": "3adba1978dc2a268f237678352b6de524bf81427"
+}
