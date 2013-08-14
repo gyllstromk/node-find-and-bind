@@ -1,5 +1,5 @@
 {
-  "name": "node-find-and-bind",
+  "name": "findandbind",
   "version": "0.0.0",
   "description": "Find and bind to free port in restify/express/connect.",
   "main": "index.js",
