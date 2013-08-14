@@ -6,7 +6,7 @@ var listen = module.exports = function (app, options, callback) {
         options = {};
     }
 
-    var port = options.start || 22;
+    var port = options.start || 1024;
 
     async.forever(function (callback) {
         var d = require('domain').create();
