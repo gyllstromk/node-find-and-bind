@@ -4,6 +4,8 @@ Find a free port to which to bind.
 
     $ npm install findandbind
 
+Usage:
+
 ```js
 
 var app = restify.createServer();
