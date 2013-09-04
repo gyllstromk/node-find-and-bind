@@ -22,6 +22,8 @@ findandbind(app, function (err, port) {
 });
 ```
 
+### Specifying port from which to start checking
+
 By default, `findandbind` starts checking at `1024`, the first user port.
 To start checking at a different port:
 
@@ -32,7 +34,7 @@ findandbind(app, { start: 2048 }, function (err, port) {
 });
 ```
 
-In tests:
+### In tests
 
 ```js
 
@@ -43,6 +45,13 @@ describe('testing my server', function () {
         findandbind(app, function (err, port) {
             myUrl = 'http://localhost:' + port;
             done(err);
+        });
+    });
+
+    it('GET / returns 200', function (done) {
+        request(myUrl, function (err, resp, body) {
+            assert.equal(resp.statusCode, 200);
+            done();
         });
     });
 });
