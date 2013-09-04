@@ -2,13 +2,18 @@
 
 Find a free port to which to bind.
 
+    $ npm install findandbind
+
 ```js
 
 var app = restify.createServer();
 
 // ... do my configuration of app
 
-require('findandbind')(app, function (err, port) {
+var findandbind = require('findandbind');
+
+findandbind(app, function (err, port) {
+    // starts looking at 1024 ...
     console.log('listening on', port);
 });
 ```
@@ -18,7 +23,7 @@ To start checking at a different port:
 
 ```js
 
-require('findandbind')(app, { start: 2048 }, function (err, port) {
+findandbind(app, { start: 2048 }, function (err, port) {
     console.log('listening on', port);
 });
 ```
