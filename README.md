@@ -4,7 +4,7 @@ Find a free port to which to bind your restify/express/http server.
 
     $ npm install findandbind
 
-Usage:
+## Usage
 
 ```js
 
