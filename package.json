@@ -7,10 +7,13 @@
     "async": "~0.2.9"
   },
   "devDependencies": {
-    "mocha": "~1.12.0"
+    "mocha": "~1.12.0",
+    "restify": "~2.6.0",
+    "express": "~3.3.5"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha test.js -R spec"
+    "test": "./node_modules/.bin/mocha -R spec",
+    "test-frameworks": "./node_modules/.bin/mocha -R spec ./test/frameworks"
   },
   "repository": {
     "type": "git",

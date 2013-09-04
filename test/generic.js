@@ -1,4 +1,4 @@
-var listen = require('./index');
+var listen = require('../');
 
 var EventEmitter = require('events').EventEmitter;
 
