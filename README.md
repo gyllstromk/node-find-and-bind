@@ -1,6 +1,6 @@
 # Find and bind
 
-Find a free port to which to bind.
+Find a free port to which to bind your restify/express/http server.
 
     $ npm install findandbind
 
@@ -8,7 +8,7 @@ Usage:
 
 ```js
 
-var app = restify.createServer();
+var app = restify.createServer(); // or app = express(), etc
 
 // ... do my configuration of app
 
